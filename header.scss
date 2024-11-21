@@ -1,4 +1,10 @@
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Wet+Paint&display=swap");
+@import "mixins";
+
+$color-1: #0f1016;
+$text-color: #f0f0f0;
+$accent-color: #006aff;
+
 * {
   margin: 0;
   padding: 0;
@@ -11,7 +17,7 @@ html {
 
 .navigation {
   height: 60px;
-  background-color: #0f1016;
+  background-color: $color-1;
   display: flex;
   justify-content: flex-end;
   align-items: center;
@@ -23,9 +29,8 @@ html {
   display: flex;
   flex-direction: row;
   align-items: center;
-}
-@media (max-width: 450px) {
-  .links-container {
+
+  @include phone {
     flex-direction: column;
     align-items: flex-start;
     position: fixed;
@@ -33,7 +38,7 @@ html {
     right: -100%;
     z-index: 10;
     width: 300px;
-    background-color: #0f1016;
+    background-color: $color-1;
     box-shadow: -5px 0 5px rgba(0, 0, 0, 0.25);
     transition: 0.5s ease-out;
   }
@@ -45,10 +50,9 @@ html {
   display: flex;
   align-items: center;
   text-decoration: none;
-  color: #f0f0f0;
-}
-@media (max-width: 450px) {
-  .navigation a {
+  color: $text-color;
+
+  @include phone {
     box-sizing: border-box;
     height: auto;
     width: 100%;
@@ -58,7 +62,7 @@ html {
 }
 
 .navigation a:hover {
-  background-color: #006aff;
+  background-color: $accent-color;
 }
 
 .navigation .home-link {
@@ -66,7 +70,7 @@ html {
 }
 
 .navigation svg {
-  fill: #f0f0f0;
+  fill: $text-color;
 }
 
 #sidebar-active {
@@ -76,10 +80,7 @@ html {
 .open-sidebar-button,
 .close-sidebar-button {
   display: none;
-}
-@media (max-width: 450px) {
-  .open-sidebar-button,
-  .close-sidebar-button {
+  @include phone {
     display: block;
     padding: 20px;
   }
@@ -88,7 +89,6 @@ html {
 #sidebar-active:checked ~ .links-container {
   right: 0;
 }
-
 #sidebar-active:checked ~ #overlay {
   height: 100%;
   width: 100%;
@@ -97,7 +97,3 @@ html {
   left: 0;
   z-index: 9;
 }
-
-p {
-  background-color: pink;
-}/*# sourceMappingURL=styles.css.map */

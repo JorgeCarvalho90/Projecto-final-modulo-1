@@ -1,0 +1,59 @@
+.breadcrumbs{
+    list-style: none;
+    background-color: transparent;
+    padding: 0 15px;
+
+    &__list{
+        display: inline;
+        & a{
+            color: #0275d8;
+            text-decoration: none;
+            &:hover{
+                color: #01447e;
+                text-decoration: underline;
+            }
+        }
+        &+li:before {
+            padding: 8px;
+            color: black;
+            content: ">\00a0";
+          }
+    }
+}
+
+
+// .breadcrumbs{
+//     // padding: 10 15px;
+//     list-style: none;
+//     background-color: transparent;
+//     display: flex;
+//     // text-decoration: none;
+//     // margin:0;
+
+//     &__list{
+//         margin-right:10px;
+//         text-decoration: none;
+//         color: #0275d8;
+//         &:hover{
+//             // cursor: pointer;
+//             color: #01447e;
+//             text-decoration: none;
+//         }
+        
+//         // & a{
+//         //     color: pink;
+//         //     background-color: red;
+//         // }
+//         // &--dryfood{
+//         //     color:black;
+//         //     &:hover{
+//         //         text-decoration: none;
+//         //         color:black;
+//         //     }
+
+//         // }
+            
+//     }
+
+
+// }

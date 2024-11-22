@@ -1,3 +1,26 @@
+@charset "UTF-8";
+.breadcrumbs {
+  list-style: none;
+  background-color: transparent;
+  padding: 0 15px;
+}
+.breadcrumbs__list {
+  display: inline;
+}
+.breadcrumbs__list a {
+  color: #0275d8;
+  text-decoration: none;
+}
+.breadcrumbs__list a:hover {
+  color: #01447e;
+  text-decoration: underline;
+}
+.breadcrumbs__list + li:before {
+  padding: 8px;
+  color: black;
+  content: "> ";
+}
+
 .products {
   background-color: rgb(201, 221, 210);
   display: flex;

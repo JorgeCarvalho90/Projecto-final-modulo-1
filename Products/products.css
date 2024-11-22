@@ -1,0 +1,29 @@
+.products-list-container {
+  background-color: red;
+  display: flex;
+  flex-direction: row;
+  align-content: flex-start;
+  justify-content: space-between;
+  padding: 20px;
+  gap: 15px;
+}
+
+.products__card {
+  font-family: Arial, Helvetica, sans-serif;
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  align-content: center;
+  padding: 25px;
+  flex: 1;
+  overflow: hidden;
+}
+
+.products__image {
+  width: 80px;
+  height: 80px;
+  -o-object-fit: contain;
+     object-fit: contain;
+  position: relative;
+  border-radius: 20px;
+}/*# sourceMappingURL=products.css.map */

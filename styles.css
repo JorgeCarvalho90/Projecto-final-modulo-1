@@ -1,5 +1,6 @@
 @charset "UTF-8";
 .breadcrumbs {
+  font-family: Arial;
   list-style: none;
   background-color: transparent;
   padding: 0 15px;
@@ -22,16 +23,16 @@
 }
 
 .products {
-  background-color: rgb(201, 221, 210);
   display: flex;
   align-content: flex-start;
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 15px;
-  gap: 15px;
+  gap: 25px;
+  box-sizing: border-box;
 }
 .products__card {
-  background-color: rgb(242, 242, 242);
+  background-color: white;
   font-family: sans-serif;
   position: relative;
   display: flex;
@@ -39,8 +40,10 @@
   align-items: center;
   padding: 15px;
   overflow: hidden;
-  border: 1px solid;
-  flex: 1 0 calc(25% - 10px);
+  border: 1px solid white;
+  box-sizing: border-box;
+  flex: 1 0 calc(33% - 10px);
+  box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.156);
 }
 .products__card__image {
   max-width: 200px;
@@ -51,11 +54,13 @@
   border-radius: 20px;
   cursor: pointer;
 }
+.products__card__image--disabledimage {
+  filter: grayscale(100%);
+}
 .products__card__name {
-  text-decoration: underline;
   margin-bottom: 0;
 }
-.products__card____description {
+.products__card____brand {
   margin-top: 0;
 }
 .products__card__pricenormal {
@@ -75,6 +80,9 @@
   box-shadow: 0 2px 5px rgb(0, 0, 0);
   animation: pulse 3s infinite;
 }
+.products__card:hover {
+  border: 1px solid;
+}
 @keyframes pulse {
   0% {
     transform: scale(1);
@@ -88,6 +96,39 @@
     transform: scale(1);
     box-shadow: 0 0 5px rgba(235, 2, 3, 0.5);
   }
+}
+.products__card__addcart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  padding: 10px 20px;
+  cursor: pointer;
+  border-radius: 0px;
+  font-size: 13px;
+  border: 1px solid #656565;
+  margin-top: 30px;
+  width: 100%;
+}
+.products__card__addcart--icon {
+  width: 20px;
+  height: 20px;
+  -o-object-fit: cover;
+     object-fit: cover;
+  margin-right: 8px;
+}
+.products__card__addcart:hover {
+  background-color: #eaeaea;
+}
+.products__card__addcart--outofstock {
+  cursor: auto;
+  background-color: rgb(179, 179, 179);
+  color: white;
+  border-color: #ffffff;
+  padding: 10px 20px;
+}
+.products__card__addcart--outofstock:hover {
+  background-color: rgb(179, 179, 179);
 }
 .products__card__prices {
   display: flex;
@@ -104,4 +145,24 @@
   color: #eb0203;
   font-weight: bold;
   margin-left: 5px;
+}
+
+@media (max-width: 576px) {
+  .products {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+  }
+  .products__card {
+    flex: 1 0 100%;
+  }
+}
+@media (max-width: 1024px) {
+  .products__card {
+    flex: 1 0 calc(50% - 10px);
+  }
+}
+body {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  background-color: rgb(241, 241, 241);
 }/*# sourceMappingURL=styles.css.map */

@@ -28,7 +28,7 @@
   justify-content: space-between;
   flex-wrap: wrap;
   padding: 15px;
-  gap: 25px;
+  gap: 20px;
   box-sizing: border-box;
 }
 .products__card {
@@ -64,7 +64,7 @@
   margin-top: 0;
 }
 .products__card__pricenormal {
-  color: #eb0203;
+  color: #333333;
   font-weight: bold;
 }
 .products__card__promo {

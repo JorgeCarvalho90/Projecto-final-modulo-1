@@ -1,0 +1,30 @@
+@mixin header-phone {
+  @media (max-width: 825px) {
+    @content;
+  }
+}
+
+@mixin footer-phone {
+  @media (max-width: 400px) {
+    @content;
+  }
+}
+
+$color-1: #b76c5c;
+$text-color: #f0f0f0;
+$accent-color: #cc9c8c;
+$black: #000000;
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 16px;
+  font-family: Open sans, "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  width: 100%;
+}

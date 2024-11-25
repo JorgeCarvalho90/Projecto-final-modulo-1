@@ -1,130 +1,361 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="styles.css">
-    <title>Loja de animais</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <title>Barkify</title>
+  </head>
+  <!-- header -->
+  <header>
+    <nav class="navigation">
+      <input type="checkbox" id="sidebar-active" />
+      <label for="sidebar-active" class="open-sidebar-button">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          height="32px"
+          viewBox="0 -960 960 960"
+          width="32px"
+          fill="#000000"
+        >
+          <path
+            d="M120-240v-66.67h720V-240H120Zm0-206.67v-66.66h720v66.66H120Zm0-206.66V-720h720v66.67H120Z"
+          />
+        </svg>
+      </label>
+      <label id="overlay" for="sidebar-active"></label>
+      <div class="links-container">
+        <label for="sidebar-active" class="close-sidebar-button">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            height="32px"
+            viewBox="0 -960 960 960"
+            width="32px"
+            fill="#000000"
+          >
+            <path
+              d="m251.33-204.67-46.66-46.66L433.33-480 204.67-708.67l46.66-46.66L480-526.67l228.67-228.66 46.66 46.66L526.67-480l228.66 228.67-46.66 46.66L480-433.33 251.33-204.67Z"
+            />
+          </svg>
+        </label>
+        <a href="#" class="home-link links-container__link">Barkify</a>
+        <div class="search">
+          <form action="" class="search__bar">
+            <input type="text" placeholder="Search products..." name="q" />
+            <button type="submit" class="search__button">
+              <img src="Icons/search_icon.svg" alt="search" />
+            </button>
+          </form>
+        </div>
+        <a href="#" class="links-container__link">About</a>
+        <a href="#" class="links-container__link">Products</a>
+        <a href="#" class="links-container__link">Brands</a>
+        <a href="#" class="links-container__link">Stores</a>
+      </div>
+    </nav>
+  </header>
+  <!-- end header -->
+  <body>
     <!-- breadcrumbs -->
-    
+
     <ul class="breadcrumbs">
-        <li class="breadcrumbs__list"><a href="#">Home</a></li>
-        <li class="breadcrumbs__list"><a href="#">Cats</a></li>
-        <li class="breadcrumbs__list">Dry food</li>
-      </ul> 
+      <li class="breadcrumbs__list"><a href="#">Home</a></li>
+      <li class="breadcrumbs__list"><a href="#">Cats</a></li>
+      <li class="breadcrumbs__list">Dry food</li>
+    </ul>
 
     <!-- end breadcrumbs -->
     <!-- products -->
     <div class="products">
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dweaad648f/images/col/545/5454015-frente.jpg?" alt="Active Life Outdoor Adult Cat Food">
-            <h3 class="products__card__name">Active Life Outdoor Adult Cat Food</h3>
-            <p class="products__card__brand">Royal Canin</p>
-            <span class="products__card__pricenormal">€71,82 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dweaad648f/images/col/545/5454015-frente.jpg?"
+          alt="Active Life Outdoor Adult Cat Food"
+        />
+        <h3 class="products__card__name">Active Life Outdoor Adult Cat Food</h3>
+        <p class="products__card__brand">Royal Canin</p>
+        <span class="products__card__pricenormal">€71,82 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwd56fe931/images/zu/545/5454226-direito-online.jpg?"
+          alt="Regular Sterilized Adult Cat Food"
+        />
+        <h3 class="products__card__name">Regular Sterilized Adult Cat Food</h3>
+        <p class="products__card__brand">Royal Canin</p>
+        <span class="products__card__pricenormal">€75,59 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwee21d9a8/images/zu/746/7466801-direito-online.jpg?"
+          alt="Hairball Care Adult Cat Food"
+        />
+        <h3 class="products__card__name">Hairball Care Adult Cat Food</h3>
+        <p class="products__card__brand">Royal Canin</p>
+        <span class="products__card__pricenormal">€103,50 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwd30b5ebd/images/col/680/6806747-frente-online.jpg?"
+          alt="Sterilized Adult Cat Food"
+        />
+        <h3 class="products__card__name">Sterilized Adult Cat Food</h3>
+        <p class="products__card__brand">Affinity Advance</p>
+        <span class="products__card__promo">-10%</span>
+        <div class="products__card__prices">
+          <p class="products__card__prices--old">€51,99 /un</p>
+          <span class="products__card__prices--new">€46,80 /un</span>
         </div>
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwd56fe931/images/zu/545/5454226-direito-online.jpg?" alt="Regular Sterilized Adult Cat Food">
-            <h3 class="products__card__name">Regular Sterilized Adult Cat Food</h3>
-            <p class="products__card__brand">Royal Canin</p>
-            <span class="products__card__pricenormal">€75,59 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwee21d9a8/images/zu/746/7466801-direito-online.jpg?" alt="Hairball Care Adult Cat Food">
-            <h3 class="products__card__name">Hairball Care Adult Cat Food</h3>
-            <p class="products__card__brand">Royal Canin</p>
-            <span class="products__card__pricenormal">€103,50 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwd30b5ebd/images/col/680/6806747-frente-online.jpg?" alt="Sterilized Adult Cat Food">
-            <h3 class="products__card__name">Sterilized Adult Cat Food</h3>
-            <p class="products__card__brand">Affinity Advance</p>
-            <span class="products__card__promo">-10%</span>
-            <div class="products__card__prices">
-                <p class="products__card__prices--old">€51,99 /un</p>
-                <span class="products__card__prices--new">€46,80 /un</span>
-            </div>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw532baf76/images/zu/545/5453985-frente-online.jpg?" alt="Sterilized Junior Cat">
-            <h3 class="products__card__name">Sterilized Junior Cat</h3>
-            <p class="products__card__brand">Royal Canin</p>
-            <span class="products__card__pricenormal">€43,64 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw532baf76/images/zu/545/5453985-frente-online.jpg?"
+          alt="Sterilized Junior Cat"
+        />
+        <h3 class="products__card__name">Sterilized Junior Cat</h3>
+        <p class="products__card__brand">Royal Canin</p>
+        <span class="products__card__pricenormal">€43,64 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image products__card__image--disabledimage" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw9e9096d8/images/zu/730/7300007-direito-online.jpg?" alt="Appetite Control Adult Cat Food">
-            <h3 class="products__card__name">Appetite Control Adult Cat Food</h3>
-            <p class="products__card__brand">Royal Canin</p>
-            <span class="products__card__pricenormal">€100,80 /un</span>
-            <!-- <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button> -->
-            <button class="products__card__addcart products__card__addcart--outofstock" disabled>Out of stock</button>
-        </div>
+      <div class="products__card">
+        <img
+          class="products__card__image products__card__image--disabledimage"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw9e9096d8/images/zu/730/7300007-direito-online.jpg?"
+          alt="Appetite Control Adult Cat Food"
+        />
+        <h3 class="products__card__name">Appetite Control Adult Cat Food</h3>
+        <p class="products__card__brand">Royal Canin</p>
+        <span class="products__card__pricenormal">€100,80 /un</span>
+        <!-- <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button> -->
+        <button
+          class="products__card__addcart products__card__addcart--outofstock"
+          disabled
+        >
+          Out of stock
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw5c63a660/images/zu/727/7276060-direito-online.jpg?" alt="British Shorthair Cat Food">
-            <h3 class="products__card__name">British Shorthair Cat Food</h3>
-            <p class="products__card__brand">Royal Canin</p>
-            <span class="products__card__pricenormal">€94,50 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw5c63a660/images/zu/727/7276060-direito-online.jpg?"
+          alt="British Shorthair Cat Food"
+        />
+        <h3 class="products__card__name">British Shorthair Cat Food</h3>
+        <p class="products__card__brand">Royal Canin</p>
+        <span class="products__card__pricenormal">€94,50 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw337307a6/images/col/544/5449815-direito-online.jpg?" alt="Neutered Satiety Balance Cat Food">
-            <h3 class="products__card__name">Neutered Satiety Balance Cat Food</h3>
-            <p class="products__card__brand">Royal Canin Veterinary Diets</p>
-            <span class="products__card__pricenormal">€97,99 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw337307a6/images/col/544/5449815-direito-online.jpg?"
+          alt="Neutered Satiety Balance Cat Food"
+        />
+        <h3 class="products__card__name">Neutered Satiety Balance Cat Food</h3>
+        <p class="products__card__brand">Royal Canin Veterinary Diets</p>
+        <span class="products__card__pricenormal">€97,99 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwe0886a7f/images/col/669/6691243-frente-online.jpg?" alt="Hairball Sterilized Adult Cat Food">
-            <h3 class="products__card__name">Hairball Sterilized Adult Cat Food</h3>
-            <p class="products__card__brand">Affinity Advance</p>
-            <span class="products__card__promo">-10%</span>
-            <div class="products__card__prices">
-                <p class="products__card__prices--old">€63,99 /un</p>
-                <span class="products__card__prices--new">€57,60 /un</span>
-            </div>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwe0886a7f/images/col/669/6691243-frente-online.jpg?"
+          alt="Hairball Sterilized Adult Cat Food"
+        />
+        <h3 class="products__card__name">Hairball Sterilized Adult Cat Food</h3>
+        <p class="products__card__brand">Affinity Advance</p>
+        <span class="products__card__promo">-10%</span>
+        <div class="products__card__prices">
+          <p class="products__card__prices--old">€63,99 /un</p>
+          <span class="products__card__prices--new">€57,60 /un</span>
         </div>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwd2f9b712/images/zu/774/7748788-frente.jpg?" alt="Sterilized Senior Cat +7 Years">
-            <h3 class="products__card__name">Sterilized Senior Cat +7 Years</h3>
-            <p class="products__card__brand">Purina</p>
-            <span class="products__card__pricenormal">€58,41 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dwd2f9b712/images/zu/774/7748788-frente.jpg?"
+          alt="Sterilized Senior Cat +7 Years"
+        />
+        <h3 class="products__card__name">Sterilized Senior Cat +7 Years</h3>
+        <p class="products__card__brand">Purina</p>
+        <span class="products__card__pricenormal">€58,41 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw3f5f4f9f/images/zu/545/5451046-frente.jpg?" alt="Junior Cat">
-            <h3 class="products__card__name">Junior Cat</h3>
-            <p class="products__card__brand">Purina</p>
-            <span class="products__card__pricenormal">€58,41 /un</span>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
-        </div>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw3f5f4f9f/images/zu/545/5451046-frente.jpg?"
+          alt="Junior Cat"
+        />
+        <h3 class="products__card__name">Junior Cat</h3>
+        <p class="products__card__brand">Purina</p>
+        <span class="products__card__pricenormal">€58,41 /un</span>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
 
-        <div class="products__card">
-            <img class="products__card__image" src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw52983b43/images/col/678/6786478-frente-online.jpg?" alt="Junior Cat Chicken and Rice Flavour">
-            <h3 class="products__card__name">Junior Cat Chicken and Rice Flavour</h3>
-            <p class="products__card__brand">Affinity Advance</p>
-            <span class="products__card__promo">-10%</span>
-            <div class="products__card__prices">
-                <p class="products__card__prices--old">€54,99 /un</p>
-                <span class="products__card__prices--new">€49,50 /un</span>
-            </div>
-            <button class="products__card__addcart"><img class="products__card__addcart--icon" src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png" alt="Ícone">Add to cart</button>
+      <div class="products__card">
+        <img
+          class="products__card__image"
+          src="https://www.zu.pt/dw/image/v2/BDVS_PRD/on/demandware.static/-/Sites-col-master-catalog/default/dw52983b43/images/col/678/6786478-frente-online.jpg?"
+          alt="Junior Cat Chicken and Rice Flavour"
+        />
+        <h3 class="products__card__name">
+          Junior Cat Chicken and Rice Flavour
+        </h3>
+        <p class="products__card__brand">Affinity Advance</p>
+        <span class="products__card__promo">-10%</span>
+        <div class="products__card__prices">
+          <p class="products__card__prices--old">€54,99 /un</p>
+          <span class="products__card__prices--new">€49,50 /un</span>
         </div>
+        <button class="products__card__addcart">
+          <img
+            class="products__card__addcart--icon"
+            src="https://cdn0.iconfinder.com/data/icons/phosphor-thin-vol-4/256/shopping-cart-thin-1024.png"
+            alt="Ícone"
+          />Add to cart
+        </button>
+      </div>
     </div>
     <!-- end products -->
-
-</body>
+    <!-- footer -->
+    <footer>
+      <div class="footer-navigation">
+        <div class="column">
+          <h3 class="column__title">Support</h3>
+          <a href="#" class="column__link">Help</a>
+          <a href="#" class="column__link">Delivery</a>
+          <a href="#" class="column__link">Returns</a>
+        </div>
+        <div class="column">
+          <h3 class="column__title">About us</h3>
+          <a href="#" class="column__link">Careers</a>
+          <a href="#" class="column__link">Contacts</a>
+          <a href="#" class="column__link">Stores</a>
+        </div>
+        <div class="column">
+          <h3 class="column__title">Legal</h3>
+          <a href="#" class="column__link">Terms of Use</a>
+          <a href="#" class="column__link">Cookies</a>
+          <a href="#" class="column__link">Privacy Policy</a>
+        </div>
+      </div>
+      <ul class="social-Icon">
+        <li class="social-Icon__link">
+          <a
+            href="https://www.facebook.com/"
+            class="social__Icon"
+            target="_blank"
+          >
+            <img src="Icons/facebook.svg" alt="Facebook" />
+          </a>
+        </li>
+        <li class="social-Icon__link">
+          <a
+            href="https://www.twitter.com/"
+            class="social__Icon"
+            target="_blank"
+          >
+            <img src="Icons/twitterx.svg" alt="Twitter" />
+          </a>
+        </li>
+        <li class="social-Icon__link">
+          <a
+            href="https://www.instagram.com/"
+            class="social__Icon"
+            target="_blank"
+          >
+            <img src="Icons/instagram.svg" alt="Instagram" />
+          </a>
+        </li>
+        <li class="social-Icon__link">
+          <a
+            href="https://www.youtube.com/"
+            class="social__Icon"
+            target="_blank"
+          >
+            <img src="Icons/youtube.svg" alt="Youtube" />
+          </a>
+        </li>
+      </ul>
+    </footer>
+    <!-- end footer -->
+  </body>
 </html>

@@ -1,141 +1,5 @@
 @charset "UTF-8";
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Rubik+Wet+Paint&display=swap");
-html,
-body,
-div,
-span,
-applet,
-object,
-iframe,
-h1,
-h2,
-h3,
-h4,
-h5,
-h6,
-p,
-blockquote,
-pre,
-a,
-abbr,
-acronym,
-address,
-big,
-cite,
-code,
-del,
-dfn,
-em,
-img,
-ins,
-kbd,
-q,
-s,
-samp,
-small,
-strike,
-strong,
-sub,
-sup,
-tt,
-var,
-b,
-u,
-i,
-center,
-dl,
-dt,
-dd,
-ol,
-ul,
-li,
-fieldset,
-form,
-label,
-legend,
-table,
-caption,
-tbody,
-tfoot,
-thead,
-tr,
-th,
-td,
-article,
-aside,
-canvas,
-details,
-embed,
-figure,
-figcaption,
-footer,
-header,
-hgroup,
-menu,
-nav,
-output,
-ruby,
-section,
-summary,
-time,
-mark,
-audio,
-video {
-  margin: 0;
-  padding: 0;
-  border: 0;
-  font-size: 100%;
-  font: inherit;
-  vertical-align: baseline;
-  box-sizing: border-box;
-}
-
-/* HTML5 display-role reset for older browsers */
-article,
-aside,
-details,
-figcaption,
-figure,
-footer,
-header,
-hgroup,
-menu,
-nav,
-section {
-  display: block;
-}
-
-body {
-  line-height: 1;
-}
-
-ol,
-ul {
-  list-style: none;
-}
-
-blockquote,
-q {
-  quotes: none;
-}
-
-blockquote:before,
-blockquote:after,
-q:before,
-q:after {
-  content: "";
-  content: none;
-}
-
-table {
-  border-collapse: collapse;
-  border-spacing: 0;
-}
-
 * {
   margin: 0;
   padding: 0;
@@ -154,13 +18,14 @@ body {
   font-family: Arial;
   list-style: none;
   background-color: transparent;
-  padding: 0 15px;
+  padding: 20px 15px;
+  margin-left: 10px;
 }
 .breadcrumbs__list {
   display: inline;
 }
 .breadcrumbs__list a {
-  color: #0275d8;
+  color: gray;
   text-decoration: none;
 }
 .breadcrumbs__list a:hover {
@@ -194,9 +59,13 @@ body {
   border: 1px solid white;
   box-sizing: border-box;
   flex: 1 0 calc(33% - 10px);
+  gap: 16px;
   box-shadow: 5px 5px 5px rgba(150, 150, 150, 0.156);
 }
-.products__card__image {
+.products__card:hover {
+  border: 1px solid;
+}
+.products__image {
   max-width: 200px;
   max-height: 200px;
   -o-object-fit: contain;
@@ -205,20 +74,20 @@ body {
   border-radius: 20px;
   cursor: pointer;
 }
-.products__card__image--disabledimage {
+.products__image--disabledimage {
   filter: grayscale(100%);
 }
-.products__card__name {
+.products__name {
   margin-bottom: 0;
 }
-.products__card____brand {
+.products____brand {
   margin-top: 0;
 }
-.products__card__pricenormal {
+.products__pricenormal {
   color: #333333;
   font-weight: bold;
 }
-.products__card__promo {
+.products__promo {
   background-color: #eb0203;
   color: white;
   font-weight: bold;
@@ -230,9 +99,6 @@ body {
   text-transform: uppercase;
   box-shadow: 0 2px 5px rgb(0, 0, 0);
   animation: pulse 3s infinite;
-}
-.products__card:hover {
-  border: 1px solid;
 }
 @keyframes pulse {
   0% {
@@ -248,7 +114,7 @@ body {
     box-shadow: 0 0 5px rgba(235, 2, 3, 0.5);
   }
 }
-.products__card__addcart {
+.products__addcart {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -261,38 +127,38 @@ body {
   margin-top: 30px;
   width: 100%;
 }
-.products__card__addcart--icon {
+.products__addcart--icon {
   width: 20px;
   height: 20px;
   -o-object-fit: cover;
      object-fit: cover;
   margin-right: 8px;
 }
-.products__card__addcart:hover {
+.products__addcart:hover {
   background-color: #eaeaea;
 }
-.products__card__addcart--outofstock {
+.products__addcart--outofstock {
   cursor: auto;
   background-color: rgb(179, 179, 179);
   color: white;
   border-color: #ffffff;
   padding: 10px 20px;
 }
-.products__card__addcart--outofstock:hover {
+.products__addcart--outofstock:hover {
   background-color: rgb(179, 179, 179);
 }
-.products__card__prices {
+.products__prices {
   display: flex;
   align-items: center;
   margin: 0;
   padding: 0;
 }
-.products__card__prices--old {
+.products__prices--old {
   color: #777;
   text-decoration: line-through;
   margin: 0 10px;
 }
-.products__card__prices--new {
+.products__prices--new {
   color: #eb0203;
   font-weight: bold;
   margin-left: 5px;

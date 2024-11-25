@@ -4,14 +4,122 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="styles.css" />
-    <title>Document</title>
+    <title>Filters</title>
   </head>
   <body>
-    <div class="conteudo">
-      <p>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Doloremque,
-        modi?
-      </p>
-    </div>
+    <!-- filters -->
+    <aside class="container__filters">
+      <div class="container__categories">
+        <h3 class="title__categories">Categories</h3>
+        <div class="search__categories">
+          <input
+            class="search__bar"
+            id="age__junior"
+            type="input"
+            value=""
+            placeholder="Search for Categories"
+          />
+          <label for="age__junior"></label>
+        </div>
+      </div>
+      <div class="container__age">
+        <h3 class="title__age">Age</h3>
+        <div class="list__age">
+          <ul>
+            <li class="age__junior">
+              <input id="age__junior" type="checkbox" value="junior" />
+              <label for="age__junior">Junior</label>
+            </li>
+            <li class="age__adult">
+              <input id="age__adult" type="checkbox" value="adult" />
+              <label for="age__adult">Adult</label>
+            </li>
+            <li class="age__senior">
+              <input id="age__senior" type="checkbox" value="senior" />
+              <label for="age__senior">Senior</label>
+            </li>
+            <li class="age__juniorAdult">
+              <input
+                id="age__juniorAdult"
+                type="checkbox"
+                value="junior adult"
+              />
+              <label for="age__juniorAdult">Junior & Adult</label>
+            </li>
+            <li class="age__all">
+              <input id="age__all" type="checkbox" value="all" />
+              <label for="age__all">All</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container__brands">
+        <h3 class="title__brands">Brands</h3>
+        <div class="list__brands">
+          <ul>
+            <li class="brands__royal">
+              <input id="brands__royal" type="checkbox" value="royal canin" />
+              <label for="brands_royal">Royal Canin</label>
+            </li>
+            <li class="brands__purina">
+              <input id="brands__purina" type="checkbox" value="purina one" />
+              <label for="brands_purina">Purina One</label>
+            </li>
+            <li class="brands__science">
+              <input
+                id="brands__science"
+                type="checkbox"
+                value="science diet"
+              />
+              <label for="brands__science">Science Diet</label>
+            </li>
+            <li class="brands__friskies">
+              <input id="brands__friskies" type="checkbox" value="friskies" />
+              <label for="brands__friskies">Friskies</label>
+            </li>
+            <li class="brands__wellness">
+              <input id="brands__wellness" type="checkbox" value="welness" />
+              <label for="brands_wellness">Wellness</label>
+            </li>
+            <li class="brands__all">
+              <input id="brands__all" type="checkbox" value="all" />
+              <label for="brands_all">All</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="container__price">
+        <h3 class="title__price">Price</h3>
+        <div class="list__price">
+          <ul>
+            <li class="price__0to5">
+              <input id="price__0to5" type="checkbox" value="0to5" />
+              <label for="price__0to5">0€ - 4,99€</label>
+            </li>
+            <li class="price__5to15">
+              <input id="price__5to15" type="checkbox" value="5to15" />
+              <label for="price__5to15">5€ - 14,99€</label>
+            </li>
+            <li class="price__15to25">
+              <input id="price__15to25" type="checkbox" value="15to25" />
+              <label for="price__15to25">15€ - 24,99€</label>
+            </li>
+            <li class="price__25to50">
+              <input id="price__25to50" type="checkbox" value="25to50" />
+              <label for="price__25to50">25€ - 49,99€</label>
+            </li>
+            <li class="price__discount">
+              <input id="price__discount" type="checkbox" value="discount" />
+              <label for="price__discount">Discount</label>
+            </li>
+            <li class="price__all">
+              <input id="price__all" type="checkbox" value="all" />
+              <label for="price__all">All</label>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </aside>
+    <!-- filters -->
   </body>
 </html>

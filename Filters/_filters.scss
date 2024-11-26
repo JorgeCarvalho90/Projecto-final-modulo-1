@@ -59,7 +59,7 @@
 .categories__search {
   width: 100%;
   display: flex;
-  justify-content: flex-end;
+  justify-content: center;
   align-items: center;
   background-color: transparent;
 }
@@ -74,11 +74,22 @@
   // background-color: red;
 }
 
+.categories__title {
+  padding-top: 10px;
+}
+
 .categories__search__bar {
   display: flex;
   align-items: center;
   justify-content: space-between;
   border-radius: 5px;
+  margin: 10px 0;
+  border: 1px solid black;
+  & input {
+    background-color: transparent;
+    border: none;
+    margin-left: 5px;
+  }
 }
 
 h3 {

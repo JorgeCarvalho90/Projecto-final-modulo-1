@@ -176,6 +176,9 @@ body {
 
 header {
   background-color: #b76c5c;
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
 @media (max-width: 825px) {
   header {

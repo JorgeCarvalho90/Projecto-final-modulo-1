@@ -95,6 +95,15 @@ li {
   margin: 5px;
 }
 
+.filter-title {
+  margin: 20px;
+}
+
+.filter-list {
+  display: flex;
+  justify-content: center;
+}
+
 /* 
   width 100%;
   top: 0;
@@ -118,3 +127,27 @@ opacity: 1;
 document.querySelector('button').addEventListener('click', () => {
   document.querySelector('.filters').classList.toggle('opened')
 }) */
+
+@media (max-width: 1024px) {
+  .filters__container {
+    flex: 1 0 calc(50% - 10px);
+  }
+}
+
+@media (max-width: 576px) {
+  .grid-body {
+    grid-template-areas:
+      "filters"
+      "products";
+    grid-template-columns: 1fr;
+  }
+  .filters__container {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-content: center;
+    &__card {
+      flex: auto;
+    }
+  }
+}

@@ -1,4 +1,4 @@
-.container__filters {
+.filters__container {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -6,7 +6,7 @@
   height: 100%;
 }
 
-.container__categories {
+.categories__container {
   width: 100%;
   height: 100%;
   border: 0.5px solid lightgray;
@@ -14,7 +14,7 @@
   margin: 5px;
 }
 
-.container__age {
+.age__container {
   width: 100%;
   height: 100%;
   border: 0.5px solid lightgray;
@@ -22,7 +22,7 @@
   margin: 5px;
 }
 
-.container__brands {
+.brands__container {
   width: 100%;
   height: 100%;
   border: 0.5px solid lightgray;
@@ -30,28 +30,54 @@
   margin: 5px;
 }
 
-.container__price {
+.price__container {
   width: 100%;
   height: 100%;
   border: 0.5px solid lightgray;
   margin: 5px;
 }
 
-.search__categories {
+// .categories__search {
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
+// }
+
+// .categories__button {
+//   width: 80%;
+//   display: flex;
+//   flex-direction: column;
+//   align-content: center;
+//   border-color: rgb(80, 80, 80);
+//   border-radius: 50px;
+//   color: rgb(80, 80, 80);
+//   margin: 5px;
+//   cursor: pointer;
+// }
+
+.categories__search {
+  width: 100%;
   display: flex;
-  flex-direction: column;
-  align-content: center;
+  justify-content: flex-end;
+  align-items: center;
+  background-color: transparent;
 }
 
-.search__bar {
-  width: 80%;
+.categories__search__button {
+  background: none;
+  color: none;
+  border: none;
+  padding: 0 5px 0 0;
+  cursor: pointer;
+  outline: inherit;
+  // background-color: red;
+}
+
+.categories__search__bar {
   display: flex;
-  flex-direction: column;
-  align-content: center;
-  border-color: rgb(80, 80, 80);
-  border-radius: 50px;
-  color: rgb(80, 80, 80);
-  margin: 5px;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 5px;
 }
 
 h3 {

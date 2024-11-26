@@ -68,23 +68,21 @@
     <!-- end breadcrumbs -->
 
     <!-- filters -->
-    <aside class="container__filters">
-      <div class="container__categories">
-        <h3 class="title__categories">Categories</h3>
-        <div class="search__categories">
-          <input
-            class="search__bar"
-            id="age__junior"
-            type="input"
-            value=""
-            placeholder="Search for Categories"
-          />
-          <label for="age__junior"></label>
+    <aside class="filters__container">
+      <div class="categories__container">
+        <h3 class="categories__title">Categories</h3>
+        <div class="categories__search">
+          <form action="categories__search__bar">
+            <input type="text" placeholder="Search for Categories" />
+            <button type="submit" class="categories__search__button">
+              <img src="Icons/search_cat.svg" alt="search" />
+            </button>
+          </form>
         </div>
       </div>
-      <div class="container__age">
-        <h3 class="title__age">Age</h3>
-        <div class="list__age">
+      <div class="age__container">
+        <h3 class="age__title">Age</h3>
+        <div class="age__list">
           <ul>
             <li class="age__junior">
               <input id="age__junior" type="checkbox" value="junior" />
@@ -113,9 +111,9 @@
           </ul>
         </div>
       </div>
-      <div class="container__brands">
-        <h3 class="title__brands">Brands</h3>
-        <div class="list__brands">
+      <div class="brands__container">
+        <h3 class="brands__title">Brands</h3>
+        <div class="brands__list">
           <ul>
             <li class="brands__royal">
               <input id="brands__royal" type="checkbox" value="royal canin" />
@@ -148,9 +146,9 @@
           </ul>
         </div>
       </div>
-      <div class="container__price">
-        <h3 class="title__price">Price</h3>
-        <div class="list__price">
+      <div class="price__container">
+        <h3 class="price__title">Price</h3>
+        <div class="price__list">
           <ul>
             <li class="price__0to5">
               <input id="price__0to5" type="checkbox" value="0to5" />

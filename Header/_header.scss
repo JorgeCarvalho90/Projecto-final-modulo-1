@@ -1,5 +1,13 @@
 header {
   background-color: $color-1;
+  @include header-phone {
+    display: grid;
+    grid-template-areas: "mobile-logo navigation";
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 100%;
+    align-items: center;
+    justify-content: flex-end;
+  }
 }
 
 .navigation {
@@ -9,6 +17,11 @@ header {
   align-items: center;
   max-width: 90%;
   margin: 0 auto;
+  @include header-phone {
+    grid-area: navigation;
+    max-width: 100%;
+    margin: 0;
+  }
 }
 
 .links-container {
@@ -51,10 +64,23 @@ header {
     background-color: $accent-color;
   }
 }
-.navigation .home-link {
+.logo {
   margin-right: auto;
   font-size: 40px;
   font-weight: 600;
+}
+
+.mobile-logo {
+  display: none;
+  @include header-phone {
+    display: grid;
+    grid-area: mobile-logo;
+    font-size: 40px;
+    font-weight: 600;
+    color: $text-color;
+    text-decoration: none;
+    margin-left: 20px;
+  }
 }
 
 .navigation svg {
@@ -113,6 +139,7 @@ header {
     justify-content: space-between;
     background-color: $accent-color;
     border-radius: 5px;
+    width: 30vw;
 
     & input {
       border: 0;

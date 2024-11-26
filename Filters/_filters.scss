@@ -76,6 +76,7 @@
 
 .categories__title {
   padding-top: 10px;
+  font-weight: bold;
 }
 
 .categories__search__bar {
@@ -107,12 +108,16 @@ li {
 }
 
 .filter-title {
-  margin: 20px;
+  margin: 20px 0 10px 0;
+  font-weight: bold;
 }
 
 .filter-list {
+  font-family: Arial;
   display: flex;
   justify-content: center;
+  color: rgb(80, 80, 80) margin-bott;
+  margin-bottom: 20px;
 }
 
 /* 

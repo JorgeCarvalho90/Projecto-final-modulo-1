@@ -156,6 +156,7 @@ body {
   background-color: transparent;
   padding: 20px 15px;
   margin-left: 10px;
+  margin-top: 60px;
 }
 .breadcrumbs__list {
   display: inline;
@@ -179,6 +180,7 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2;
+  top: 0;
 }
 @media (max-width: 825px) {
   header {

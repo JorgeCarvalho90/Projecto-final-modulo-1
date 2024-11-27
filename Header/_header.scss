@@ -3,6 +3,8 @@ header {
   position: fixed;
   width: 100%;
   z-index: 2;
+  top:0;
+  
   @include header-phone {
     display: grid;
     grid-template-areas: "mobile-logo navigation";
